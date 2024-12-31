@@ -43,4 +43,9 @@ namespace MTL
         m_sharedObjects.clear();
     }
 
+    std::map<SharedObjectId, std::unique_ptr<MTLSharedObject>>::const_iterator getImmutableViewOfObjectsInMemory()
+    {
+        return std::map<SharedObjectId, std::unique_ptr<MTLSharedObject>>::const_iterator it;
+    }
+
 }

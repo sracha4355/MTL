@@ -4,6 +4,7 @@
 #pragma once
 
 #include <mutex>
+#include <stdexcept> // MTLSharedMemory would not compile when std::runtime_error was thrown
 #include "MTLTypedefs.h"
 
 namespace MTL

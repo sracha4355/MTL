@@ -54,7 +54,7 @@ namespace MTL
      * @date 2020-02-16
      */
     typedef unsigned int SharedObjectId;
-
+    
     /**
      * @brief TaskName Type Definition
      *

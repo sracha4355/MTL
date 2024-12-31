@@ -82,6 +82,15 @@ namespace MTL
          */
         void clearSharedMemory();
 
+        /**
+         * @brief Get a constant iterator to view the objects in the shared memory 
+         *
+         * @author @Satvik Racharla
+         * @date 2024-12-30
+         */
+        std::map<SharedObjectId, std::unique_ptr<MTLSharedObject>>::const_iterator getImmutableViewOfObjectsInMemory();
+    
+
     private:
         std::map<SharedObjectId, std::unique_ptr<MTLSharedObject>> m_sharedObjects; //!< The shared objects.
     };

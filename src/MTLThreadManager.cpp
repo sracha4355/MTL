@@ -27,7 +27,7 @@ namespace MTL
                     if ((*it)->getThreadState() == E_MTLThreadState::CREATED)
                     {
                         // if a thread is added to the thread manager, it is automatically started
-                        (*it)->run(it->get());
+                        (*it)->run(it->get()); 
                     }
                     else if (!(*it)->isRunning())
                     {

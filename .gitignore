@@ -1,3 +1,10 @@
+# IDE related files (delete this from ignore file later)
+.vscode
+
+# unneeded folder (delete this later if author does not want it)
+build/
+/build
+
 # Prerequisites
 *.d
 
